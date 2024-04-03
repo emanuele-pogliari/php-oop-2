@@ -14,17 +14,24 @@
 <body>
     <h1>Pet e-commerce</h1>
 
-    <ul>
+    <div class="container">
+        <div class="row">
+            <?php
+            foreach ($products as $product) {
+            ?>
+                <div class='card col-4'>
+                    <img src='<?= $product->image ?>'>
+                    <h3> <?= $product->title ?></h3>
+                    <p> <?= $product->description ?></p>
+                    <p> <?= $product->price ?></p>
+                    <p><?= is_a($product, $Food) ? $product->quantity : '' ?></p>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
 
-        <?php
-        foreach ($products as $product) {
-            echo "<li>" . $product->title . "</li>";
-            echo "<li>" . $product->description . "</li>";
-            echo "<img src='$product->image'>";
-            echo "<li>" . $product->price . "</li>";
-        }
-        ?>
-    </ul>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
