@@ -1,15 +1,14 @@
-<!-- // class Games extends Product
-// {
+<?php
+class Games extends Product
+{
 
-// public $quantity;
-// public $ingredients;
+    public $material;
 
-// function __construct($title, $description, $image, $price, $category, $quantity, $ingredients)
-// {
+    function __construct($title, $description, $image, $price, $category, $material)
+    {
 
-// parent::__construct($title, $description, $image, $price, $category);
+        parent::__construct($title, $description, $image, $price, $category);
 
-// $this->quantity = $quantity;
-// $this->ingredients = $ingredients;
-// }
-// } -->
+        $this->material = $material;
+    }
+}

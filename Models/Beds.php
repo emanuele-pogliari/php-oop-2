@@ -1,16 +1,14 @@
 <?php
-class Games extends Product
+class Beds extends Product
 {
 
-    public $quantity;
-    public $ingredients;
+    public $size;
 
-    function __construct($title, $description, $image, $price, $category, $quantity, $ingredients)
+    function __construct($title, $description, $image, $price, $category, $size)
     {
 
         parent::__construct($title, $description, $image, $price, $category);
 
-        $this->quantity = $quantity;
-        $this->ingredients = $ingredients;
+        $this->size = $size;
     }
 }

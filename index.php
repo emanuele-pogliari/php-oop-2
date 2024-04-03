@@ -12,19 +12,20 @@
 </head>
 
 <body>
-    <h1>Pet e-commerce</h1>
+
 
     <div class="container">
+        <h1>Pet e-commerce</h1>
         <div class="row">
             <?php
             foreach ($products as $product) {
             ?>
-                <div class='card col-4'>
+                <div class='card col-3 m-3'>
                     <img src='<?= $product->image ?>'>
                     <h3> <?= $product->title ?></h3>
                     <p> <?= $product->description ?></p>
                     <p> <?= $product->price ?></p>
-                    <p><?= is_a($product, $Food) ? $product->quantity : '' ?></p>
+                    <p><?= is_a($product, 'Foods') ? $product->quantity : '' ?></p>
                 </div>
             <?php
             }
