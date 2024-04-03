@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -50,7 +51,7 @@
             foreach ($products as $product) {
             ?>
                 <div class='card col-3 m-3 p-0 border-0 rounded-3 overflow-hidden  '>
-                    <div class="my-badge">Hot</div>
+                    <div class="my-badge"><?= $product->category->getCategory() ?></div>
                     <img class="pb-2" src='<?= $product->image ?>'>
                     <div class="card-body p-2">
                         <h3 class="title"><?= $product->title ?></h3>

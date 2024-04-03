@@ -8,7 +8,7 @@ require "./Models/Games.php";
 
 
 
-$product1Category = new Category("cani");
+$product1Category = new Category('<i class="fa-solid fa-dog"></i>');
 
 $product1 = new Foods(
     "Purina veterinary diet cane",
@@ -20,7 +20,7 @@ $product1 = new Foods(
     "Pollo, riso, melograno",
 );
 
-$product2Category = new Category("gatti");
+$product2Category = new Category('<i class="fa-solid fa-cat"></i>');
 
 $product2 = new Foods(
     "Agras schesir gatto dry carnivore aringa e salmone",
@@ -32,7 +32,7 @@ $product2 = new Foods(
     "Aringa, Salmone",
 );
 
-$product3Category = new Category("gatti");
+$product3Category = new Category('<i class="fa-solid fa-cat"></i>');
 
 $product3 = new Games(
     "Vitakraft Tiragraffi Multipiano con amaca e cuccette",
@@ -43,7 +43,7 @@ $product3 = new Games(
     "plastica e stoffa",
 );
 
-$product4Category = new Category("cani");
+$product4Category = new Category('<i class="fa-solid fa-dog"></i>');
 
 $product4 = new Games(
     "Palla gomma dura large",
@@ -54,7 +54,7 @@ $product4 = new Games(
     "plastica",
 );
 
-$product5Category = new Category("cani");
+$product5Category = new Category('<i class="fa-solid fa-dog"></i>');
 
 $product5 = new Beds(
     "Leopet cane cuccia rodi verde reversibile",
@@ -65,7 +65,7 @@ $product5 = new Beds(
     "60x70 cm",
 );
 
-$product6Category = new Category("gatti");
+$product6Category = new Category('<i class="fa-solid fa-cat"></i>');
 
 $product6 = new Beds(
     "Ferribiella gatto igloo gatto nuvoletta rosa",

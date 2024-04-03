@@ -29,6 +29,11 @@ body {
   padding: 3px 10px;
 }
 
+.my-badge i {
+  font-size: 14px;
+  color: #fff;
+}
+
 .title {
   font-weight: 500;
   font-size: 20px;

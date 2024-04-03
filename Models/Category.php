@@ -9,4 +9,9 @@ class Category
     {
         $this->name = $_name;
     }
+
+    public function getCategory()
+    {
+        return $this->name;
+    }
 }
