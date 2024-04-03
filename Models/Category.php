@@ -2,13 +2,11 @@
 
 class Category
 {
-    public $cat;
-    public $dog;
+    public $name;
 
 
-    function __construct($cat, $dog)
+    function __construct($_name)
     {
-        $this->cat = $cat;
-        $this->dog = $dog;
+        $this->name = $_name;
     }
 }
