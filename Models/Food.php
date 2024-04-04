@@ -9,13 +9,13 @@ class Foods extends Product
     public $quantity;
     public $ingredients;
 
-    function __construct($title, $description, $image, $price, $category, $quantity, $ingredients, $sizeSmall, $sizeBig)
+    function __construct($title, $description, $image, $price, $category, $ingredients, $sizeSmall, $sizeMedium, $sizeBig)
     {
 
         parent::__construct($title, $description, $image, $price, $category);
 
-        $this->quantity = $quantity;
         $this->sizeSmall = $sizeSmall;
+        $this->sizeMedium = $sizeMedium;
         $this->sizeBig = $sizeBig;
         $this->ingredients = $ingredients;
     }

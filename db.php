@@ -14,9 +14,9 @@ $product1 = new Foods(
     "https://www.zooexpert.it/15338-large_default/purina-veterinary-diet-cane-en-gastrointestinal-da-12-kg.jpg",
     "53,80 €",
     $product1Category,
-    "2 kg",
     "Pollo, riso, melograno",
     "Small",
+    "Medium",
     "Big",
 );
 
@@ -28,9 +28,9 @@ $product2 = new Foods(
     "https://www.zooexpert.it/15840-large_default/agras-schesir-gatto-dry-carnivore-aringa-e-salmone-da-125-kg.jpg",
     "19,19 €",
     $product2Category,
-    "1.25 kg",
     "Aringa, Salmone",
     "Small",
+    "Medium",
     "Big",
 
 );
@@ -65,8 +65,8 @@ $product5 = new Beds(
     "https://www.zooexpert.it/15575-large_default/leopet-cane-cuccia-rodi-verde-60x70-cm-reversibile.jpg",
     "34,77 €",
     $product5Category,
-    "60x70 cm",
     "Small",
+    "Medium",
     "Big",
 );
 
@@ -78,8 +78,8 @@ $product6 = new Beds(
     "https://www.zooexpert.it/14396-large_default/ferribiella-gatto-igloo-gatto-nuvoletta-50-x-50-cm-rosa.jpg",
     "49,80 €",
     $product6Category,
-    "50x50 cm",
     "Small",
+    "Medium",
     "Big",
 
 );

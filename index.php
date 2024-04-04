@@ -60,7 +60,7 @@
                             <p class="product-food-quantity"><?= is_a($product, 'Foods') ? 'Quantità: ' . $product->sizeSmall : '' ?></p>
                             <p class="product-food-ingredients"><?= is_a($product, 'Foods') ? 'Ingredienti: ' . $product->ingredients : '' ?></p>
                             <p class="product-games-material"><?= is_a($product, 'Games') ? 'Composizione: ' . $product->material : '' ?></p>
-                            <p class="product-beds-size"><?= is_a($product, 'Beds') ? 'Dimensioni: ' . $product->sizeSmall : '' ?></p>
+                            <p class="product-beds-size"><?= is_a($product, 'Beds') ? 'Dimensioni: ' . $product->sizeMedium : '' ?></p>
                             <p class="product-price">Prezzo: <?= $product->price ?></p>
                         </div>
                     </div>
