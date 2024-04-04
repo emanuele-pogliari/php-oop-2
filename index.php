@@ -48,6 +48,15 @@
     <div class="container">
         <div class="row mx-auto justify-content-center">
             <?php
+            if ($error) {
+            ?>
+                <div class="alert alert-warning" role="alert">
+                    <?= $error ?>
+                </div>
+            <?php
+            }
+            ?>
+            <?php
             foreach ($products as $product) {
             ?>
                 <div class="col-4">

@@ -13,7 +13,12 @@ class Product
         $this->title = $title;
         $this->description = $description;
         $this->image = $image;
-        $this->price = $price;
         $this->category = $category;
+
+        if (is_numeric($price)) {
+            $this->price = $price;
+        } else {
+            throw new Exception("Prezzo non valido");
+        }
     }
 }
