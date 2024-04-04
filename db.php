@@ -18,6 +18,8 @@ $product1 = new Foods(
     $product1Category,
     "2 kg",
     "Pollo, riso, melograno",
+    "Small",
+    "Big",
 );
 
 $product2Category = new Category('<i class="fa-solid fa-cat"></i>');
@@ -30,6 +32,9 @@ $product2 = new Foods(
     $product2Category,
     "1.25 kg",
     "Aringa, Salmone",
+    "Small",
+    "Big",
+
 );
 
 $product3Category = new Category('<i class="fa-solid fa-cat"></i>');

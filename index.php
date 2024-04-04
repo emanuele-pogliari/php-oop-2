@@ -50,17 +50,19 @@
             <?php
             foreach ($products as $product) {
             ?>
-                <div class='card col-3 m-3 p-0 border-0 rounded-3 overflow-hidden  '>
-                    <div class="my-badge"><?= $product->category->getCategory() ?></div>
-                    <img class="pb-2" src='<?= $product->image ?>'>
-                    <div class="card-body p-2">
-                        <h3 class="title"><?= $product->title ?></h3>
-                        <p class="product-details"><?= $product->description ?></p>
-                        <p class="product-food-quantity"><?= is_a($product, 'Foods') ? 'Quantità: ' . $product->quantity : '' ?></p>
-                        <p class="product-food-ingredients"><?= is_a($product, 'Foods') ? 'Ingredienti: ' . $product->ingredients : '' ?></p>
-                        <p class="product-games-material"><?= is_a($product, 'Games') ? 'Composizione: ' . $product->material : '' ?></p>
-                        <p class="product-beds-size"><?= is_a($product, 'Beds') ? 'Dimensioni: ' . $product->size : '' ?></p>
-                        <p class="product-price">Prezzo: <?= $product->price ?></p>
+                <div class="col-4">
+                    <div class='card m-3 p-0 border-0 rounded-3 overflow-hidden  '>
+                        <div class="my-badge"><?= $product->category->getCategory() ?></div>
+                        <img class="pb-2" src='<?= $product->image ?>'>
+                        <div class="card-body p-2">
+                            <h3 class="title"><?= $product->title ?></h3>
+                            <p class="product-details"><?= $product->description ?></p>
+                            <p class="product-food-quantity"><?= is_a($product, 'Foods') ? 'Quantità: ' . $product->quantitySmall : '' ?></p>
+                            <p class="product-food-ingredients"><?= is_a($product, 'Foods') ? 'Ingredienti: ' . $product->ingredients : '' ?></p>
+                            <p class="product-games-material"><?= is_a($product, 'Games') ? 'Composizione: ' . $product->material : '' ?></p>
+                            <p class="product-beds-size"><?= is_a($product, 'Beds') ? 'Dimensioni: ' . $product->size : '' ?></p>
+                            <p class="product-price">Prezzo: <?= $product->price ?></p>
+                        </div>
                     </div>
                 </div>
             <?php
