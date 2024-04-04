@@ -6,8 +6,6 @@ require "./Models/Beds.php";
 require "./Models/Food.php";
 require "./Models/Games.php";
 
-
-
 $product1Category = new Category('<i class="fa-solid fa-dog"></i>');
 
 $product1 = new Foods(
@@ -68,6 +66,8 @@ $product5 = new Beds(
     "34,77 €",
     $product5Category,
     "60x70 cm",
+    "Small",
+    "Big",
 );
 
 $product6Category = new Category('<i class="fa-solid fa-cat"></i>');
@@ -79,6 +79,8 @@ $product6 = new Beds(
     "49,80 €",
     $product6Category,
     "50x50 cm",
+    "Small",
+    "Big",
 
 );
 

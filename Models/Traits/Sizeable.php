@@ -2,6 +2,6 @@
 
 trait Sizeable
 {
-    public $quantitySmall;
-    public $quantityBig;
+    public $sizeSmall;
+    public $sizeBig;
 }
